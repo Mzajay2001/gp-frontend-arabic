@@ -1,0 +1,15 @@
+.big{
+    font-size:x-large;
+}
+.selectAttBtn{
+    position: absolute;
+    top: 95%;
+    left: 0.5%;
+    margin-left: 6.5%;
+    background-color: rgb(18, 29, 43) !important;
+    color: rgba(255, 255, 255, 0.895) !important;
+}
+.selectAttBtn:hover{
+    background-color: rgb(34, 96, 177) !important;
+    color: rgba(255, 255, 255, 0.895) !important;
+}

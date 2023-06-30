@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--My Custom CSS Files-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/createmeeting.css">
+    <!--Bootstrap 5-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/f0525f147f.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="icon" type="image/x-icon" href="logos/FCAILogo-removebg-preview.png">
+    <title>انشاء اجتماع</title>
+</head>
+<body>
+    
+    <!--First Section Header Start-->
+    <section class="firstheader">
+      <div class="container d-flex justify-content-between">
+             <div>
+              <a href="logged_index.html"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
+              <span class="fcai fade-in">كلية الحاسبــــات و ذكـــاء الاصطناعى</span>
+             </div> 
+                <ul class="icons fade-in">
+                <a class="icon" href="logged_index.html"><i class="fa-solid fa-house"></i></a>
+                <a class="icon" href="profile.html"><i class="fa-regular fa-user"></i></a>
+                <a class="icon" href="archive.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="index.html"  class="btn logoutt">تسجيل الخروج</a>
+                </ul> 
+        </div>
+      <br>
+  </section>
+    <!--First Section Header End-->
+  <!--Navbar Start-->
+  <div class="NavBar">
+      <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto" >
+                <a class="nav-link active" aria-current="page" href="logged_index.html">الرئيسية</a>
+                <a class="nav-link" href="createmeeting.html">الاجتماعات</a>
+                <a class="nav-link" href="notification.html">الإشعارات</a>
+                <a class="nav-link" href="archive.html">أرشيف</a>
+                <a class="nav-link" href="CreateSubject.html">إنشاء مواضيع</a>
+              </div>
+             </div>
+      </div>
+        </nav>
+  </div>
+  <!--Navbar End-->
+
+
+    <section class="firstheader">
+      <div class="container-fluid text-center meetingDetails">
+
+        <div class="row">
+          <div class="col-4 right">
+
+            <div class="col-10 left1">
+              <div class="left1Layer1">
+                <label class="h2-1">
+                  الاجتماعات القادمة 
+                </label>
+                <br>
+                <label class="h3-1">
+                    موضوع :
+                </label>
+                <br>
+                <label class="h3-2">
+                     المكان :
+                </label>
+                <br>
+                <label class="h3-3">
+                   التاريخ :
+                </label>
+
+                <div class="row row1">
+                  <div class="col-5">
+                     <div>
+                    <button type="button" class="btn btn-light button11" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      جدول الاجتماعات
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">جدول الاجتماعات</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0;"></button>
+                          </div>
+                          <div class="modal-body"><br>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                     <!--a tag <a href="#">--> <a class="btn btn-transparent" href="btn1.html" style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                      <p class="card-text" style="text-align:right;">عن : <br> من :</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                      <button style="background-color: transparent; border: 0px;"><img src="img/bin.png" height="20" width="20" alt=""></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class="col-5">
+                     <div>
+                    <button type="button" class="btn btn-light button12" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      الحضور
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">جدول الحاضرين</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0;"></button>
+                          </div>
+                          <div class="modal-body"><br>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                      <img src="logos/avatar.png" height="70" width="70" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card border-0 h-100">
+                                    <div class="card-body">
+                                      <p class="card-text" style="text-align:right;">القسم: <br> الاسم :</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-10 left2" >
+
+              <div class="left2Layer2">
+
+                <div class="row row2">
+                  <h2 class="h2-2"> 
+                      الاجتماع الحالي <span class="space1"></span> 
+                      <button type="button" class="btn btn-light button2" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        عرض
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">جدول الاجتماعات</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left:0;"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <div class="card border-0 h-100">
+                                      <div class="card-body">
+                                        <a class="btn btn-transparent" href="currentmeetingbutton.html" style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-9">
+                                    <div class="card border-0 h-100">
+                                      <div class="card-body">
+                                        <p class="card-text" style="text-align:right;">عن: <br> من:</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </h2>
+                </div>
+
+                <div class="row row2"> <!----update here---->
+                  <h2 class="h2-3">
+                    الاجتماع السابق<span class="space2"></span> <a class="btn btn-light button2" href="previousmeeting.html" role="button"> عرض </a>
+                  </h2>
+                </div>
+
+              </div>
+              
+            </div>
+
+            <div class="col-10 left3">
+              <div class="left3Layer3">
+                <h2 class="h2-4">السجل</h2>
+                <br>
+              </div>
+            </div>
+
+          </div>
+<!------------------------------------------------------------------------------------------------------------>
+          <div class="col-8 right">
+            <div class="right1 " style="position: relative;">
+              <div class="container">
+                
+                <h2 class="h2-5">إنشاء اجتماع جديد</h2>
+
+                <input class="form-control input1 inputs" type="text" placeholder="ادخل موضوع" aria-label="default input example">
+                <div class="clearr"></div>
+                <form action="/action_page.php" class="">
+                  <select class="inputs input2" name="Location" id="Location">
+                    <option value="Location1">قاعة 1</option>
+                    <option value="Location2">قاعة 2</option>
+                    <option value="Location3">قاعة 3</option>
+                    <option value="Location4">قاعة 4</option>
+                  </select>
+                </form>
+                <div class="clearr"></div>
+                <input class="input3 inputs" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                <div class="clearr"></div>
+                <div class="input-group" id="startDate">
+                    <input type="date" class="DATAPICKER">
+                </div>
+                <div class="clearr"></div>
+                  <!--Select Doctor-->
+                  <!-- Button trigger modal -->
+                  <div>
+                    <button type="button" class="btn selectDocBtn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      اختر الحاضرين
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">اختر الحاضرين</h1>
+                            <button type="button" class="btn-close" style="margin-left: 0;" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                          <form class="d-flex" role="ابحث">
+                            <input class="form-control me-2" type="ابحث" placeholder="ابحث" aria-label="ابحث">
+                            <button class="btn btn-outline-primary" type="submit">ابحث</button>
+                          </form><br>
+                           <!----------------------------->
+                            <form action="/action_page.php" class="formbody">
+                              <label class="header" for="Doc1">الاسم </label>
+                              <br>
+                              <label class="header" for="Doc1">القسم </label>
+                              <div class="clearr"></div>
+                              <input class="chbox" type="checkbox" id="Doc1" name="Doc1" value="Doc1">
+                              <hr>
+                            </form>
+                            <!-------------------------->
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+                            <button type="button" class="btn btn-primary">تم</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Select Doctor-->
+                  <br><br>
+                  <!--Attach File-->
+                  <div>
+                    <button type="button" class="btn selectAttBtn" onclick="openFileInput()">إضافة ملف  </button>
+                    <input type="file" id="fileInput" style="display: none;">                   
+                  </div>
+              </div>
+                  <!--Attach File-->
+                  <!--Button Done-->
+                  <div>
+                    <button type="submit" class="btn selectDoneBtn">
+                      إنشاء
+                    </button>
+                  </div>
+                  <!--Button Done-->
+                    
+                        
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <br>
+
+          <!--Footer Copyright Start-->
+    <div class="lastsection">
+        <center>
+            <div class="textlastsection">
+                <h6> © 2023 جميع الحقوق محفوظة  لدي FCAI </h6>
+            </div>
+        </center>
+    </div>
+      <!--Footer Copyright End-->
+
+    <!--JS Files-->
+  <!----- <script src="js/creatinMeetin.js"></script>-->
+    <script src="js/animation.js"></script>
+    <script src="js/flipcard.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

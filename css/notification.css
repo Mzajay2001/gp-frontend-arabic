@@ -1,0 +1,191 @@
+.left{
+    box-sizing: border-box !important;
+    padding-right: 50px !important;
+    height: 80vh;
+}
+
+.right{
+    box-sizing: border-box !important;
+    padding-left: 50px !important;
+    height: 80vh;
+}
+
+.left1{
+    background-color: rgb(68, 128, 197);
+    width: 100%;
+    height: 38%;
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left2{
+    background-color: rgb(36, 58, 84);
+    width: 100%;
+    height: 25%;
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left3{
+    background-color: rgb(68, 128, 197);
+    width: 100%;
+    height: 35%;
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meetingDetails{
+    height: 80vh;
+}
+
+.left1Layer1{
+    position: relative;
+    border-radius: 17px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(240, 248, 255, 0.455);
+}
+.button11{
+    position: absolute;
+    right: 12% ;
+    bottom: 5%;
+    color: rgb(36, 58, 84) !important; 
+    font-size: 80% !important;
+    width: max-content !important;
+    height: fit-content !important;
+}
+.button12{
+    position: absolute;
+    right: 57% ;
+    bottom: 5%;
+    color: rgb(36, 58, 84) !important; 
+    font-size: 80% !important;
+    width: fit-content !important;
+    height: fit-content !important;
+}
+.left2Layer2{
+    border-radius: 17px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(240, 248, 255, 0.455);
+}
+
+.left3Layer3{
+    border-radius: 17px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(240, 248, 255, 0.455);
+    overflow-y: auto;
+}
+
+.right1{
+    background-color: rgb(32, 71, 118);
+    width: 100%;
+    height: 98%;
+    margin: 7px;
+    border-radius: 17px;
+}
+/*-----------------------------------------*/
+.h2-1{
+    color:white;
+    font-size: 170%;
+    display: inline-block;
+}
+
+.h3-1{
+    color:white;
+    font-size: 20px;
+}
+.h3-2{
+    color:white;
+    font-size: 20px;
+}
+.h3-3{
+    color:white;
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+.containerML{
+    overflow-y: auto;
+}
+/*----------------------------------------*/
+.h2-2{
+    color:white;
+    font-size: 20px;
+    display: inline-block ;
+}
+/*----------------------------------------*/
+.h2-3{
+    color:white;
+    font-size: 20px;
+    display: inline-block;
+}
+.row1{
+    margin-right: 55px !important;
+    margin-top: 15px !important;
+    
+}
+
+.button2{
+    color: rgb(36, 58, 84) !important; 
+    font-size: 15px !important;
+    width: 100px !important;
+    height: 35px;
+}
+
+.space1{
+    margin-inline-start: 15px;
+}
+
+.space2{
+    margin-inline-start: 11px ;
+}
+
+.row2{
+    margin-top: 17px !important;
+}
+
+.h2-4{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+}
+.cardu{
+    height: fit-content !important;
+}
+.h2-5{
+    color:white;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.notification{
+    height: 490px; 
+    border: 0px; 
+    background-color: transparent !important;
+    border-radius: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+blockquote
+{
+    text-align-last: start;
+}
+
+
+
+

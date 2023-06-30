@@ -1,0 +1,36 @@
+.createSub{
+    background-color: rgb(32, 71, 118);
+    margin: 1%;
+    padding-right: 3%;
+    padding-bottom: 1.5%;
+    border-radius: 10px;
+    position: relative !important;
+    color: white !important;
+}
+.inputStyling{
+    border-radius: 6px;
+    padding: 0.4%;
+    width:42%;
+}
+.inputStylingArea{
+    border-radius: 6px;
+    padding: 0.5px;
+    width: 97%;
+}
+.SendBtn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    margin: 1.3%;
+    background-color: rgb(18, 29, 43) !important;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    padding: 0.7%;
+    margin-left: 4%;
+}
+.SendBtn:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
