@@ -18,20 +18,22 @@
 </head>
 <body id="signupbody">
 
-    <!--Sign Up Card Start-->
 
+    <!--Sign Up Card Start-->
     <div class="sign-up-card">
         <section class="fade-in">
-
-        <h1>تسجيل الدخول</h1>
-        <form style="position: relative;">
-          <input type="text" placeholder="اسم المستخدم" required>
-          <input type="password" placeholder="كلمة المرور" required>
-          <a href="forget password.html" class="forgetLink">نسيت كلمة المرور</a>
-          <br>
-          <button type="submit">تسجيل الدخول</button>
-        </form>
-        
+            <h1>تسجيل الدخول</h1>
+            <form id="loginForm" style="position: relative;" class="needs-validation" novalidate>       
+                <input type="text" id="username" class="form-control" placeholder="اسم المستخدم" required >
+                <div class="invalid-feedback">
+                </div>
+                <input type="password" id="password" class="form-control" placeholder="كلمة المرور" required >
+                <div class="invalid-feedback">
+                </div>
+                <a href="forget password.html" class="forgetLink">نسيت كلمة المرور</a>
+                <br>
+                <button type="submit">تسجيل الدخول</button>
+            </form>
         </section>
     </div>
     <!--Sign Up Card End-->
@@ -42,7 +44,7 @@
     <script src="js/flipcard.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src= "js/login.js"></script>
 
 </body>
 </html>
