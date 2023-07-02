@@ -27,7 +27,7 @@
              </div> 
                 <ul class="icons fade-in">
                 <a href="index.html"  class="btn logoutt">تسجيل الخروج</a>
-            </ul> 
+                </ul> 
       </div>
       <br>
   </section>
@@ -82,8 +82,114 @@
                         أستاذ
                     </label>
                     <br>
+                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        مسؤل
+                    </label>
+                    <br>
                     <br>
                 </div>
+                
+                <div class="container">
+                    <h5>القسم</h5>
+                    <input class="form-check-input" type="radio" name="search-radio1" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        الذكاء الاصطناعى
+                    </label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="search-radio1" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        علوم الحاسب
+                    </label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="search-radio1" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        دعم القرار
+                    </label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="search-radio1" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        نظم المعلومات
+                    </label>
+                    <br>
+                    <input class="form-check-input" type="radio" name="search-radio1" id="search-by-name" >
+                    <label class="form-check-label" for="search-by-name">
+                        تكنولوجيا المعلومات
+                    </label>
+                    <br>
+                </div>
+                <br>
+                <div class="col-5">
+                    <div>
+                   <button type="button" class="button11" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                      قائمه المستخدمين
+                   </button>
+ 
+                   <!-- Modal -->
+                   <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">قائمه المستخدمين</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0;"></button>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="modal-body">
+
+                                <form action="/action_page.php">
+                                    <select name="users" id="users" class="selectuser">
+                                      <option value="doctor">doctor</option>
+                                      <option value="secretary">secretary</option>
+                                      <option value="admin">admin</option>
+                                      <option value="meeting initiator">meeting initiator</option>
+                                    </select>
+                                </form>
+
+                                <div class="container">
+                                    <div class="row box">
+                                    <div class="col-md-3">
+                                        <div class="card border-0 h-100">
+                                            <div class="card-body">
+                                                <a class="btn btn-transparent" href="edituser.html" style="background-color: transparent; border: 0px;"><img src="logos/avatar.png" height="60" width="60" alt=""><span style="text-decoration: underline;">تعديل</span></a>
+                                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---------------------------------------->
+                                    <div class="col-md-6">
+                                        <div class="card border-0 h-100">
+                                            <div class="card-body">
+                                            <p class="card-text" style="text-align:right;">الاسم: </p>
+                                            <p class="card-text" style="text-align:right;">القسم: </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---------------------------------------->
+                                    <div class="col-md-3">
+                                        <div class="card border-0 h-100">
+                                            <div class="card-body trash">
+                                                <button style="background-color: transparent; border: 0px;"><img src="img/bin.png" height="25" width="25" alt="">خذف</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---------------------------------------->
+                                    </div>
+                                    <hr>
+                                    
+                                </div>
+                            </div>
+
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
+                         </div>
+
+                        </div>
+                    </div>
+                   </div>
+
+                 </div>
+                 </div>
+
                 <button type="submit" class="SendBtn">أضف</button>
             </form>
         </div>
