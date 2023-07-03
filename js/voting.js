@@ -10,13 +10,13 @@ submitBtn.addEventListener('click', function() {
 
   alert(`You voted for: ${selectedvote.join(', ')}`);
 
-  const accpectVotes = document.querySelectorAll('input[value="yes"]:checked').length;
+  const acceptVotes = document.querySelectorAll('input[value="yes"]:checked').length;
   const refuseVotes = document.querySelectorAll('input[value="no"]:checked').length;
 
-  const totalVotes = accpectVotes + refuseVotes;
+  const totalVotes = acceptVotes + refuseVotes;
 
-  const accpectBar = document.getElementById('accpect-bar');
-  accpectBar.style.width = `${(accpectVotes / totalVotes) * 100}%`;
+  const acceptBar = document.getElementById('accept-bar');
+  acceptBar.style.width = `${(acceptVotes / totalVotes) * 100}%`;
 
   const refuseBar = document.getElementById('refuse-bar');
   refuseBar.style.width = `${(refuseVotes / totalVotes) * 100}%`;

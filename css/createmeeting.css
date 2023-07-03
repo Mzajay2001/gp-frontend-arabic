@@ -189,7 +189,7 @@
 .inputs{
     float: right;
     margin-right: 4%;
-    width: 55% !important;
+    width: 50% !important;
     margin-bottom: 1.5%;
 }
 .input2{
@@ -203,12 +203,24 @@
     border: 0px;
     color: rgb(92, 92, 92) !important;
     padding: 2% !important;
+    width : calc(55% /2) !important;
+    display: inline-block;
 }
+.input3::before{
+    content: attr(data-placeholder);
+    position: absolute;   
+    background-color: white; 
+}
+.input3:hover::before{content:"";}
+.input3:valid::before {
+    display: none;
+  }
+
 /*date picker*/
 .DATAPICKER{
     float: right;
     margin-right: 4%;
-    width: 55% !important;
+    width: 50% !important;
     margin-bottom: 5%;
     height: 37px !important;
     border-radius: 7px;

@@ -1,9 +1,9 @@
 var checkboxIds = [];
-const makeID= "c";
+
 
 for(var i =1; i<= 7;i++)
 {
-    var id= makeID+i;
+  var id= `c${i}`;
 var card = document.createElement("div");
 card.className = "card crdsize1";
 var cardBody = document.createElement("div");
@@ -13,7 +13,7 @@ blockquote.className = "blockquote mb-0 blockquote1";
 
 var label1 = document.createElement("label");
 label1.setAttribute("for", id);
-label1.innerText = "من: "+i;
+label1.innerText = `من: ${i}`;
 blockquote.appendChild(label1);
 blockquote.appendChild(document.createElement("br"));
 var label2 = document.createElement("label");
