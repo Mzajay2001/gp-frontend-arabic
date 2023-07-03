@@ -1,42 +1,31 @@
 .left{
     box-sizing: border-box !important;
-    padding-right: 50px !important;
+    padding-right: 4% !important;
     height: 80vh;
 }
 
 .right{
     box-sizing: border-box !important;
-    padding-left: 50px !important;
+    padding-left: 5% !important;
     height: 80vh;
 }
 
 .left1{
     background-color: rgb(68, 128, 197);
     width: 90%;
-    height: 37%;
-    margin: 0.7%;
+    height: 50%;
     border-radius: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20%;
+    margin-top: 3%;
 }
 
 .left2{
     background-color: rgb(36, 58, 84);
     width: 90%;
-    height: 25%;
-    margin: 0.7%;
-    border-radius: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left3{
-    background-color: rgb(68, 128, 197);
-    width: 90%;
-    height: 35%;
-    margin: 0.7%;
+    height: 30%;
     border-radius: 17px;
     display: flex;
     justify-content: center;
@@ -53,6 +42,35 @@
     width: 90%;
     height: 90%;
     background-color: rgba(240, 248, 255, 0.455);
+}
+.h2-1{
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    color:white;
+    font-size: 170%;
+}
+.h3-1{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    color:white;
+    font-size: 20px;
+}
+.h3-2{
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    color:white;
+    font-size: 20px;
+}
+.h3-3{
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    color:white;
+    font-size: 20px;
+    padding-bottom: 2%;
 }
 .button11{
     position: absolute;
@@ -73,19 +91,34 @@
     height: fit-content !important;
 }
 .left2Layer2{
+    position: relative;
     border-radius: 17px;
     width: 90%;
     height: 90%;
     background-color: rgba(240, 248, 255, 0.455);
+}
+.button2{
+    position: absolute;
+    color: rgb(36, 58, 84) !important; 
+    font-size: 70% !important;
+    width: fit-content !important;
+    height: fit-content !important;
+}
+.h2-2{
+    position: absolute;
+    top: 20%;
+    color:white;
+    font-size: 135%;
+    display: inline-block ;
+}
+.h2-3{
+    position: absolute;
+    top: 60%;
+    color:white;
+    font-size: 135%;
+    display: inline-block;
 }
 
-.left3Layer3{
-    border-radius: 17px;
-    width: 90%;
-    height: 90%;
-    background-color: rgba(240, 248, 255, 0.455);
-    overflow-y: auto;
-}
 
 .right1{
     background-color: rgb(32, 71, 118);
@@ -93,52 +126,6 @@
     height: 98%;
     margin: 0.7%;
     border-radius: 17px;
-}
-/*-----------------------------------------*/
-.h2-1{
-    color:white;
-    font-size: 170%;
-    display: inline-block;
-}
-
-.h3-1{
-    color:white;
-    font-size: 20px;
-}
-.h3-2{
-    color:white;
-    font-size: 20px;
-}
-.h3-3{
-    color:white;
-    font-size: 20px;
-    padding-bottom: 2%;
-}
-.containerML{
-    overflow-y: scroll;
-}
-/*----------------------------------------*/
-.h2-2{
-    color:white;
-    font-size: 135%;
-    display: inline-block ;
-}
-/*----------------------------------------*/
-.h2-3{
-    color:white;
-    font-size: 135%;
-    display: inline-block;
-}
-
-.row1{
-    margin-left: 16% !important; 
-}
-.button2{
-    position: relative;
-    color: rgb(36, 58, 84) !important; 
-    font-size: 70% !important;
-    width: fit-content !important;
-    height: fit-content !important;
 }
 .space1{
     margin-inline: 2%;
@@ -189,7 +176,7 @@
 .inputs{
     float: right;
     margin-right: 4%;
-    width: 50% !important;
+    width: 55% !important;
     margin-bottom: 1.5%;
 }
 .input2{
@@ -215,12 +202,11 @@
 .input3:valid::before {
     display: none;
   }
-
 /*date picker*/
 .DATAPICKER{
     float: right;
     margin-right: 4%;
-    width: 50% !important;
+    width: 55% !important;
     margin-bottom: 5%;
     height: 37px !important;
     border-radius: 7px;
@@ -241,19 +227,9 @@
     background-color: rgb(34, 96, 177) !important;
     color: rgba(255, 255, 255, 0.895) !important;
 }
+
 /*Attach File*/
-.selectAttBtn{
-    margin-right: 4%;
-    float: right;
-    width: 33%;
-    background-color: rgb(18, 29, 43) !important;
-    color: rgba(255, 255, 255, 0.895) !important;
-}
-.selectAttBtn:hover{
-    margin-right: 4%;
-    background-color: rgb(34, 96, 177) !important;
-    color: rgba(255, 255, 255, 0.895) !important;
-}
+
 /*Done Button*/
 .selectDoneBtn{
     position: absolute !important;

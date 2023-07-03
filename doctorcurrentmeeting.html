@@ -7,7 +7,7 @@
     <!--My Custom CSS Files-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
-    <link rel="stylesheet" href="css/meetinglistbutton.css">
+    <link rel="stylesheet" href="css/currentmeetingbutton.css">
     <!--Bootstrap 5-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--Font Awesome-->
@@ -17,43 +17,38 @@
     <title>اجتماع #</title>
 </head>
 <body>
+
     <!--First Section Header Start-->
     <section class="firstheader">
       <div class="container d-flex justify-content-between">
              <div>
-              <a href="index.html"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
+              <a href="#"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
               <span class="fcai fade-in">كلية الحاسبــــات و ذكـــاء الاصطناعى</span>
              </div> 
                 <ul class="icons fade-in">
-                <a class="icon" href="index.html"><i class="fa-solid fa-house"></i></a>
-                <a class="icon" href="profile.html"><i class="fa-regular fa-user"></i></a>          
-                <a class="icon" href="#"><i class="fa-solid fa-language"></i></a>
-                <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="icon" href="profile.html"><i class="fa-regular fa-user"></i></a>
+                <a href="index.html"  class="btn logoutt">تسجيل الخروج</a>
             </ul> 
       </div>
       <br>
   </section>
     <!--First Section Header End-->
-   <!--Navbar Start-->
-    <div class="NavBar">
-    <div class="container">
-    <nav class="navbar navbar-expand-lg ">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto" >
-              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-              <a class="nav-link" href="createmeeting.html">الاجتماعات</a>
-              <a class="nav-link" href="notification.html">الإشعارات</a>
-              <a class="nav-link" href="archive.html">أرشيف</a>
-              <a class="nav-link" href="CreateSubject.html">إنشاء مواضيع</a>
-            </div>
-           </div>
-    </div>
-      </nav>
-    </div>
-<!--Navbar End-->
+  <!--Navbar Start-->
+  <div class="NavBar">
+      <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
+              <div class="navbar-nav mx-auto" >
+                <a class="nav-link active" aria-current="page" href="notification.html">الإشعارات</a>
+              </div>
+             </div>
+      </div>
+        </nav>
+  </div>
+  <!--Navbar End-->
 
     <!--Create Sub Start-->
     <div>
@@ -61,31 +56,33 @@
             <div class="row">
                 <div class="col-md-8">
                     <br>
-                    <h4>موضوع :</h4>
-                    <h4>اجتماع :</h4>
-                    <h4>التاريخ :</h4>
+                    <label class="makeitbig">موضوع :</label>
                     <br>
-                    <textarea name="Subject" placeholder="موضوع" id="" cols="100" rows="14"></textarea>
+                    <label class="makeitbig">اجتماع :</label>
+                    <br>
+                    <br>
+                    <textarea name="Subject" placeholder="موضوع" id="" cols="100" rows="14" disabled></textarea>
                     <br>
                 </div>
 
                 <div class="col-md-4 mt-5">
                     
-                    <div style="border: 2px solid black; height:450px; overflow: auto;"><br>
+                    <div style="border: 2px solid black; height:100%; overflow: auto;"><br>
+
                         <div class="container">
                             <h3>جدول الاجتماعات</h3>
                           <div class="row">
                             <div class="col-md-3">
                               <div class="card border-0 h-100">
                                 <div class="card-body">
-                                 <!--a tag <a href="#">--> <button style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></button>
+                                 <button style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></button>
                                 </div>
                               </div>
                             </div>
                             <div class="col-md-9">
                               <div class="card border-0 h-100">
                                 <div class="card-body">
-                                  <p class="card-text" style="text-align:right;">عن: <br> من:</p>
+                                  <p class="card-text" style="text-align:right;"> من:</p>
                                 </div>
                               </div>
                             </div>
@@ -94,33 +91,34 @@
                           <hr>
                         
                         </div>
+
+                        
+
                     </div>
 
                     <br>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <textarea name="Decision" placeholder="قرار..." id="" cols="174" rows="7"></textarea>
-                </div>
-            </div>
+
+
+            <!------------>
             <div class="row">
                 <div class="col-md-6">
                     <br><div class="voting-list">
                         <ul>
                           <li>
-                            <input type="radio" id="yes" name="vote" value="yes">
-                            <label for="yes">موافقة</label>
+                            <input type="radio" id="apple" name="fruit" value="apple">
+                            <label for="apple">موافقة</label>
                             <div class="bar-container">
-                              <div class="bar" id="accept-bar"></div>
+                              <div class="bar" id="apple-bar"></div>
                             </div>
                           </li>
 
                           <li>
-                            <input type="radio" id="no" name="vote"  value="no">
-                            <label for="no">رفض</label>
+                            <input type="radio" id="banana" name="fruit" value="banana">
+                            <label for="banana">رفض</label>
                             <div class="bar-container">
-                              <div class="bar" id="refuse-bar"></div>
+                              <div class="bar" id="banana-bar"></div>
                             </div>
                           </li>
                         </ul>
@@ -134,11 +132,12 @@
                     <center>
                     <div>
                       <a class="btn mt-4 px-5 py-2 selectAttBtn" id="submit-votes">صوت</a>
-                      <a class="btn mt-4 px-5 py-2  selectAttBtn" href="createmeeting.html"> الرجوع </a>
+                      <a class="btn mt-4 px-5 py-2  selectAttBtn" href="notification.html"> رجوع </a>
                     </div>
                     </center>
                 </div>
             </div>
+            <!--------------------->
         </div>
     </div>
     <!--Create Sub End-->

@@ -22,13 +22,12 @@
     <section class="firstheader">
       <div class="container d-flex justify-content-between">
              <div>
-              <a href="logged_index.html"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
+              <a href=""><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
               <span class="fcai fade-in">كلية الحاسبــــات و ذكـــاء الاصطناعى</span>
              </div> 
                 <ul class="icons fade-in">
-                <a class="icon" href="logged_index.html"><i class="fa-solid fa-house"></i></a>
+                <a class="icon" href="createmeeting.html"><i class="fa-solid fa-house"></i></a>
                 <a class="icon" href="profile.html"><i class="fa-regular fa-user"></i></a>
-                <a class="icon" href="archive.html"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <a href="index.html"  class="btn logoutt">تسجيل الخروج</a>
                 </ul> 
         </div>
@@ -44,9 +43,7 @@
             </button>
             <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
               <div class="navbar-nav mx-auto" >
-                <a class="nav-link active" aria-current="page" href="logged_index.html">الرئيسية</a>
                 <a class="nav-link" href="createmeeting.html">الاجتماعات</a>
-                <a class="nav-link" href="notification.html">الإشعارات</a>
                 <a class="nav-link" href="archive.html">أرشيف</a>
                 <a class="nav-link" href="CreateSubject.html">إنشاء مواضيع</a>
               </div>
@@ -61,22 +58,22 @@
       <div class="container-fluid text-center meetingDetails">
 
         <div class="row">
-          <div class="col-4 right">
+          <div class="col-4 left">
 
             <div class="col-10 left1">
               <div class="left1Layer1">
                 <label class="h2-1">
                   الاجتماعات القادمة 
                 </label>
-                <br>
+                
                 <label class="h3-1">
                     موضوع :
                 </label>
-                <br>
+                
                 <label class="h3-2">
                      المكان :
                 </label>
-                <br>
+                
                 <label class="h3-3">
                    التاريخ :
                 </label>
@@ -85,7 +82,7 @@
                   <div class="col-5">
                      <div>
                     <button type="button" class="btn btn-light button11" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                      جدول الاجتماعات
+                      اجندة الاجتماع
                     </button>
   
                     <!-- Modal -->
@@ -93,7 +90,7 @@
                       <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">جدول الاجتماعات</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> اجندة الاجتماع</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0;"></button>
                           </div>
                           <div class="modal-body"><br>
@@ -126,9 +123,9 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0;"></button>
                           </div>
                           <div class="modal-body"><br>
-                              <div class="container" id ="attendcontianer">
+                            <div class="container" id ="attendcontianer">
           
-                              </div>
+                            </div>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
@@ -144,7 +141,6 @@
             </div>
 
             <div class="col-10 left2" >
-
               <div class="left2Layer2">
 
                 <div class="row row2">
@@ -159,7 +155,7 @@
                         <div class="modal-dialog modal-dialog-scrollable">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">جدول الاجتماعات</h1>
+                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">اجندة الاجتماع</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left:0;"></button>
                             </div>
                             <div class="modal-body">
@@ -175,7 +171,7 @@
                                   <div class="col-md-9">
                                     <div class="card border-0 h-100">
                                       <div class="card-body">
-                                        <p class="card-text" style="text-align:right;">عن: <br> من:</p>
+                                        <p class="card-text" style="text-align:right;">عن :</p>
                                       </div>
                                     </div>
                                   </div>
@@ -203,13 +199,6 @@
               
             </div>
 
-            <div class="col-10 left3">
-              <div class="left3Layer3">
-                <h2 class="h2-4">السجل</h2>
-                <br>
-              </div>
-            </div>
-
           </div>
 <!------------------------------------------------------------------------------------------------------------>
           <div class="col-8 right">
@@ -222,7 +211,7 @@
                 <div class="clearr"></div>
                 <form action="/action_page.php" class="">
                   <select class="inputs input2" name="Location" id="Location">
-                    <option value="Location1">قاعة 1</option>
+                    <option value="Location1">قاعة السمينار</option>
                     <option value="Location2">قاعة 2</option>
                     <option value="Location3">قاعة 3</option>
                     <option value="Location4">قاعة 4</option>
@@ -232,9 +221,10 @@
                 <div>
                   <input class="input3 inputs" type="time" id="start" name="startmeeting" data-placeholder="من الساعة" required>
                   <input class="input3 inputs" type="time" id="end" name="endmeeting" data-placeholder="الي الساعة" required>
+                 </div> 
+                  <div class="clearr">
                 </div>
-                <div class="clearr"></div>
-                <div class="input-group" id="startDate">
+                <!----><div class="input-group" id="startDate">
                     <input type="date" class="DATAPICKER" id="datepicker">
                 </div>
                 <div class="clearr"></div>
@@ -259,7 +249,7 @@
                             <button class="btn btn-outline-primary" type="submit">ابحث</button>
                           </form><br>
                            <!----------------------------->
-
+                            
                             <!-------------------------->
 
                           </div>
@@ -273,7 +263,10 @@
                   </div>
                   <!--Select Doctor-->
                   <br><br>
-
+                  <!--Attach File-->
+                  
+              </div>
+                  <!--Attach File-->
                   <!--Button Done-->
                   <div>
                     <button type="submit" class="btn selectDoneBtn" id="selectDoneBtn">
@@ -290,7 +283,7 @@
         </div>
 
       </div>
-  </section>
+    </section>
   <br>
 
           <!--Footer Copyright Start-->
@@ -304,6 +297,7 @@
       <!--Footer Copyright End-->
 
     <!--JS Files-->
+  <!----- <script src="js/creatinMeetin.js"></script>-->
     <script src="js/animation.js"></script>
     <script src="js/flipcard.js"></script>
     <script src="js/popper.min.js"></script>

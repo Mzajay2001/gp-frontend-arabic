@@ -14,9 +14,11 @@ blockquote.className = "blockquote mb-0";
 
 var paragraphs = [`من :${i}`, "عن :", "مكان :", "الموافق :","وقت الاجتماع :"];
 paragraphs.forEach(function(text) {
-  var paragraph = document.createElement("p");
+  var paragraph = document.createElement("label");
+  var br = document.createElement("br");
   paragraph.textContent = text;
   blockquote.appendChild(paragraph);
+  blockquote.appendChild(br);
 });
 
 cardBody.appendChild(blockquote);

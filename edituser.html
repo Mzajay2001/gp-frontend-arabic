@@ -53,66 +53,21 @@
     <div class="container" >
         <div class="createSub">
             <form action="">
-                <br>
-                <h3>تعديل بيانات المستخدم</h3>
-                <br>
-                <input type="text" class="inputStyling" placeholder="اسم المستخدم">
-                <br>
-                <br>
-                <input type="text" class="inputStyling" placeholder="كلمة المرور">
-                <br>
-                <br>
-                <input type="text" class="inputStyling" placeholder="بريد الألكتروني">
-                <br>
-                <br>
+
                 <div class="container">
-                    <h5>نوع الحساب</h5>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        بادئ الاجتماع
-                    </label>
                     <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        سكرتير
-                    </label>
+                    <h4>نوع الحساب</h4>
                     <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        أستاذ
-                    </label>
-                    <br>
-                    <br>
+                    <form action="/action_page.php">
+                      <select name="users" id="users" class="selectuser">
+                        <option value="doctor">بادئ الاجتماع</option>
+                        <option value="secretary">سكرتير</option>
+                        <option value="admin">أستاذ</option>
+                        <option value="meeting initiator">مسؤل</option>
+                      </select>
+                  </form>
                 </div>
                 
-                <div class="container">
-                    <h5>القسم</h5>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        الذكاء الاصطناعى
-                    </label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        علوم الحاسب
-                    </label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        دعم القرار
-                    </label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        نظم المعلومات
-                    </label>
-                    <br>
-                    <input class="form-check-input" type="radio" name="search-radio" id="search-by-name" >
-                    <label class="form-check-label" for="search-by-name">
-                        تكنولوجيا المعلومات
-                    </label>
-                    <br>
-                </div>
                 <br>
 
                 <button type="submit" class="SendBtn">حفظ</button>

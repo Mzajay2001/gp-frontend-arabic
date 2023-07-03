@@ -7,6 +7,10 @@
     position: relative !important;
     color: white !important;
 }
+.makeitbig{
+  font-size: x-large;
+  font: bold;
+}
 .selectAttBtn{
     background-color: rgb(18, 29, 43) !important;
     color: rgba(255, 255, 255, 0.895) !important;
@@ -74,4 +78,12 @@
     border-radius: 5px;
     width: 0%;
     transition: width 0.5s ease-in-out;
+  }
+  .lastsection {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 1% ;
   }

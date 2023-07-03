@@ -4,8 +4,16 @@
     border-radius: 10px;
     margin: 1%;
     color: white !important;
-    height: 90vh !important;
+    height: 40vh !important;
     padding-right: 2%;
+}
+.selectuser{
+    position: absolute;
+    background-color: white !important;
+    color: black !important;
+    border-radius: 7px !important;
+    width: 40% !important;
+    height: 12% !important;
 }
 .SendBtn{
     position: absolute;
@@ -25,15 +33,12 @@
     background-color: rgb(255, 255, 255) !important;
     color: black;
 }
-.inputStyling{
-    border-radius: 6px;
-    padding: 0.3%;
-    width:50%;
-}
-.lastsection{ 
+
+.lastsection {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #f5f5f5;
     padding: 1% ;
-}
+  }

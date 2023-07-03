@@ -18,41 +18,43 @@
 </head>
 <body>
  
-  <!--First Section Header Start-->
+    <!--First Section Header Start-->
     <section class="firstheader">
       <div class="container d-flex justify-content-between">
              <div>
-              <a href="logged_index.html"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
+              <a href="#"><img src="logos/FCAILogo-removebg-preview.png" class="fade-in " height="60" width="60" alt=""></a>
               <span class="fcai fade-in">كلية الحاسبــــات و ذكـــاء الاصطناعى</span>
              </div> 
                 <ul class="icons fade-in">
-                <a class="icon" href="logged_index.html"><i class="fa-solid fa-house"></i></a>
+                <a class="icon" href="controllerhome.html"><i class="fa-solid fa-house"></i></a>
                 <a class="icon" href="profile.html"><i class="fa-regular fa-user"></i></a>
-                <a class="icon" href="archive.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="index.html"  class="btn logoutt">تسجيل الخروج</a>
+                <a href="index.html" class="btn logoutt">تسجيل الخروج</a>
             </ul> 
       </div>
       <br>
   </section>
     <!--First Section Header End-->
-      <!--Navbar Start-->
-      <div class="NavBar">
-        <div class="container">
-        <nav class="navbar navbar-expand-lg ">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto" >
-                  <a class="nav-link" href="createmeeting.html">الاجتماعات</a>
-                  <a class="nav-link active" href="archive.html">أرشيف</a>
-                  <a class="nav-link" href="CreateSubject.html">إنشاء مواضيع</a>
-                </div>
-               </div>
-        </div>
-          </nav>
+  <!--Navbar Start-->
+  <div class="NavBar">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fade-in" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto" >
+              <a class="nav-link active" aria-current="page" href="controllerhome.html">الرئيسية</a>
+              <a class="nav-link" href="controller-redirectsubject.html">إعادة توجيه الموضوعات</a>
+              <a class="nav-link" href="controllermeetings.html">إنشاء اجتماع </a>
+              <a class="nav-link" href="controllerarchive.html">الارشيف</a>
+              <a class="nav-link" href="controllercreatesub.html">إنشاء مواضيع</a>
+            </div>
+           </div>
     </div>
-    <!--Navbar End-->
+      </nav>
+  </div>
+  <!--Navbar End-->
+
     <!--Cards-->
     <br>
     <div class="container">
@@ -104,15 +106,29 @@
           <div class="card" style="height: 500px; border: 0px;">
             
             <!--Row1-->
-            <div class="row row-cols-1 row-cols-md-1 g-2" style="overflow-y: auto; border-radius: 10px;  " id ="oldsubjects">
+            <div class="row row-cols-1 row-cols-md-1 g-2" style="overflow-y: auto; border-radius: 10px; ">
+              <div class="col ">
 
+                  <div class="card cardArc h-100">
+                    <div class="card-body">
+                      <label class="card-title classSub">محتوى الموضوع : </label>
+                      <p class="card-text classMeet">اسم الاجتماع :</p>
+                      <p class="card-text classDate">التاريخ :</p>
+                    </div>
+                    <br>
+                    <!-- Button trigger modal -->
+                    <a href="controllerviewsubject.html" class="btn viewbtn">
+                      عرض
+                    </a>
+                  </div><br>
+
+                  
+              </div>
               
             </div>
 
           </div>
         </div>
-
-        <br>
 
         <br>
 
@@ -134,7 +150,5 @@
     <script src="js/flipcard.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
-    <script src="js/archive.js"></script>
 </body>
 </html>
