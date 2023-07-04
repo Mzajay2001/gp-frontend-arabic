@@ -32,7 +32,7 @@
       </div>
       <br>
   </section>
-    <!--First Section Header End-->
+  <!--First Section Header End-->
   <!--Navbar Start-->
   <div class="NavBar">
       <div class="container">
@@ -50,94 +50,109 @@
   </div>
   <!--Navbar End-->
 
-    <!--Create Sub Start-->
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <br>
-                    <label class="makeitbig">موضوع :</label>
-                    <br>
-                    <label class="makeitbig">اجتماع :</label>
-                    <br>
-                    <br>
-                    <textarea name="Subject" placeholder="موضوع" id="" cols="100" rows="14" disabled></textarea>
-                    <br>
-                </div>
-
-                <div class="col-md-4 mt-5">
-                    
-                    <div style="border: 2px solid black; height:100%; overflow: auto;"><br>
-
-                        <div class="container">
-                            <h3>جدول الاجتماعات</h3>
-                          <div class="row">
-                            <div class="col-md-3">
-                              <div class="card border-0 h-100">
-                                <div class="card-body">
-                                 <button style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></button>
-                                </div>
+   <!--Create Sub Start-->
+   <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <br>
+                <label style="font-size: x-large; font: bold;">موضوع :</label>
+                <br>
+                <label style="font-size: x-large; font: bold">اجتماع :</label>
+                <br>
+                <br>
+                <textarea name="Subject" placeholder="موضوع" id="" cols="100" rows="14" disabled></textarea>
+                <!--voting-->
+                <div class="row">
+                  <div class="col-md-6">
+                      <br><div class="voting-list">
+                          <ul>
+                            <li>
+                              <input type="radio" id="accept" name="vote" value="yes">
+                              <label for="accept">موافقة</label>
+                              <div class="bar-container">
+                                <div class="bar" id="accept-bar"></div>
                               </div>
-                            </div>
-                            <div class="col-md-9">
-                              <div class="card border-0 h-100">
-                                <div class="card-body">
-                                  <p class="card-text" style="text-align:right;"> من:</p>
-                                </div>
+                            </li>
+    
+                            <li>
+                              <input type="radio" id="refuse" name="vote" value="no">
+                              <label for="refuse">رفض</label>
+                              <div class="bar-container">
+                                <div class="bar" id="refuse-bar"></div>
                               </div>
+                            </li>
+                          </ul>
+                          </div>
+                      <br>
+                  </div>
+                  <div class="col-md-6 mt-5">
+                      <center>
+                      <div>
+                        <a class="btn mt-4 px-5 py-2 selectAttBtn" id="submit-votes">صوت</a>
+                      </div>
+                      <br>
+                      <br>
+                      </center>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-5">
+                <div style="border: 2px solid black; height: 250px; overflow: auto;"><br>
+                    <div class="container">
+                        <h3>حضور</h3>
+
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="card border-0 h-100">
+                            <div class="card-body">
+                              <img src="logos/avatar.png" height="70" width="70" alt="">
                             </div>
                           </div>
-                          
-                          <hr>
-                        
                         </div>
-
-                        
-
-                    </div>
-
-                    <br>
-                </div>
-            </div>
-
-
-            <!------------>
-            <div class="row">
-                <div class="col-md-6">
-                    <br><div class="voting-list">
-                        <ul>
-                          <li>
-                            <input type="radio" id="apple" name="fruit" value="apple">
-                            <label for="apple">موافقة</label>
-                            <div class="bar-container">
-                              <div class="bar" id="apple-bar"></div>
+                        <div class="col-md-8">
+                          <div class="card border-0 h-100">
+                            <div class="card-body">
+                              <p class="card-text" style="text-align:right;">الاسم: <br> القسم:</p>
                             </div>
-                          </li>
-
-                          <li>
-                            <input type="radio" id="banana" name="fruit" value="banana">
-                            <label for="banana">رفض</label>
-                            <div class="bar-container">
-                              <div class="bar" id="banana-bar"></div>
-                            </div>
-                          </li>
-                        </ul>
+                          </div>
+                        </div>
                       </div>
-                    <br>
-                </div>
+                      <hr>
 
-                <div class="col-md-6 mt-5">
-                    <br>
-
-                    <center>
-                    <div>
-                      <a class="btn mt-4 px-5 py-2 selectAttBtn" id="submit-votes">صوت</a>
-                      <a class="btn mt-4 px-5 py-2  selectAttBtn" href="notification.html"> رجوع </a>
                     </div>
-                    </center>
                 </div>
-            </div>
-            <!--------------------->
+                <br>
+                <div style="border: 2px solid black; height:250px; overflow: auto;"><br>
+                    <div class="container">
+                        <h3>جدول الاجتماعات</h3>
+
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="card border-0 h-100">
+                            <div class="card-body">
+                             <button style="background-color: transparent; border: 0px;"><img src="img/file.png" height="50" width="50" alt=""></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card border-0 h-100">
+                            <div class="card-body">
+                              <p class="card-text" style="text-align:right;">عن:</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      
+                      
+                    
+                    </div>
+                </div>
+                <a class="btn mt-4 px-5 py-2  selectAttBtn" style="margin-right: 30%;" href="notification.html"> رجوع </a>
+                <br>
+                <br>
         </div>
     </div>
     <!--Create Sub End-->

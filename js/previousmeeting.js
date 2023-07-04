@@ -34,12 +34,12 @@ cardBody2.classList.add('card-body');
 const text1 = document.createElement('p');
 text1.classList.add('card-text');
 text1.style.textAlign = 'right';
-text1.textContent = 'عن: '+i;
+text1.textContent = 'الاسم: '+i;
 
 const text2 = document.createElement('p');
 text2.classList.add('card-text');
 text2.style.textAlign = 'right';
-text2.textContent = 'من: ';
+text2.textContent = 'القسم: ';
 
 cardBody2.appendChild(text1);
 cardBody2.appendChild(document.createElement('br'));
@@ -88,7 +88,7 @@ var card2 = document.createElement("div");
 card2.className = "card border-0 h-100";
 var cardBody2 = document.createElement("div");
 cardBody2.className = "card-body";
-var texts = [`عن: ${i}`, "من :"];
+var texts = [`عن: ${i}`];
 texts.forEach(function(text) {
   var cardText = document.createElement("p");
   cardText.textContent = text;
