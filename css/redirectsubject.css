@@ -26,7 +26,7 @@
 .MeetingContainer1{
     border-radius: 9px;
     text-align: right;
-    height: 480px; 
+    height: 450px !important; 
     overflow-y: auto;
 }
 .archive{
@@ -62,14 +62,21 @@
 .MeetingContainer2{
     border-radius: 9px;
     text-align: right;
-    height: 280px; 
+    height: 300px; 
     overflow-y: auto;
 }
 .crdsize{
     height: 130px;
 }
 .blockquote1{
+    position: relative;
     padding-bottom: 1.5%;
+}
+.checkbox22{
+    position: absolute;
+    top: 70%;
+    left: -15%;
+    transform: scale(2);
 }
 .selectDoneBtn{
     position: absolute !important;

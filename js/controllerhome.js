@@ -1,4 +1,4 @@
-var checkboxIds = [];
+
 
 
 for(var i =1; i<= 7;i++)
@@ -13,7 +13,7 @@ blockquote.className = "blockquote mb-0 blockquote1";
 
 var label1 = document.createElement("label");
 label1.setAttribute("for", id);
-label1.innerText = `من: ${i}`;
+label1.innerText =  `${i}`;
 blockquote.appendChild(label1);
 blockquote.appendChild(document.createElement("br"));
 var label2 = document.createElement("label");

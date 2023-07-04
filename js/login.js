@@ -4,13 +4,17 @@
     form.addEventListener('submit', event => {
         event.preventDefault();
         form.classList.remove('was-validated');
-        const usernameInput = document.getElementById('username');
+        const emailInput = document.getElementById('email');
         const passwordInput = document.getElementById('password');
-        const username = usernameInput.value.trim();
+        const email = emailInput.value.trim();
         const password = passwordInput.value.trim();
         let hasError = false;
-        if (username === '') {
-            setFieldError(usernameInput, 'يرجى إدخال اسم المستخدم.');
+        if (email === '') {
+            setFieldError(emailInput, 'يرجى إدخال البريد الالكترونى.');
+            hasError = true;
+        }
+        else if (!isValidEmail(email)) {
+            setFieldError(emailInput, 'يرجى إدخال بريد الألكتروني صحيح.');
             hasError = true;
         }
         if (password === '') {
@@ -42,5 +46,9 @@
               errorFeedback.innerText = errorMessage;
             }
           });
+    }
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
     }
 })();
