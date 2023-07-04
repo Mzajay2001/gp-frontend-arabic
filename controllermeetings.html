@@ -73,15 +73,16 @@
                 <option value="Location4">قاعة 4</option>
               </select>
             </form>
-
             <div class="clearr"></div>
-            <input class="input3 inputs" type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-            <div class="clearr"></div>
-
-            <div class="input-group" id="startDate">
-                <input type="date" class="DATAPICKER">
+            <div>
+              <input class="input3 inputs" type="time" id="start" name="startmeeting" data-placeholder="من الساعة" required>
+              <input class="input3 inputs" type="time" id="end" name="endmeeting" data-placeholder="الي الساعة" required>
+             </div> 
+              <div class="clearr">
             </div>
-
+            <!----><div class="input-group" id="startDate">
+                <input type="date" class="DATAPICKER" id="datepicker">
+            </div>
             <div class="clearr"></div>
               <!--Select Doctor-->
               <!-- Button trigger modal -->
@@ -98,20 +99,13 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">اختر الحاضرين</h1>
                         <button type="button" class="btn-close" style="margin-left: 0;" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
+                      <div class="modal-body" id="selcetattendee">
                       <form class="d-flex" role="ابحث">
                         <input class="form-control me-2" type="ابحث" placeholder="ابحث" aria-label="ابحث">
                         <button class="btn btn-outline-primary" type="submit">ابحث</button>
                       </form><br>
                        <!----------------------------->
-                        <form action="/action_page.php" class="formbody">
-                          <label class="header" for="Doc1">الاسم </label>
-                          <br>
-                          <label class="header" for="Doc1">القسم </label>
-                          <div class="clearr"></div>
-                          <input class="chbox" type="checkbox" id="Doc1" name="Doc1" value="Doc1">
-                          <hr>
-                        </form>
+         
                         <!-------------------------->
 
                       </div>
@@ -127,7 +121,7 @@
 
               <!--Button Done-->
               <div>
-                <button type="submit" class="btn selectDoneBtn">
+                <button type="submit" class="btn selectDoneBtn"  id="selectDoneBtn">
                   إنشاء
                 </button>
               </div>
@@ -149,7 +143,7 @@
           <!--Footer Copyright End-->
 
     <!--JS Files-->
-    <script src="js/creatinMeetin.js"></script>
+    <script src="js/controllermeeting.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/flipcard.js"></script>
     <script src="js/popper.min.js"></script>

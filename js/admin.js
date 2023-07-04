@@ -58,28 +58,28 @@ form.addEventListener('submit', function (event) {
         .then((json) => console.log(json));
     form.reset();
 })
-// Get the userscontainer element
-const usersContainer = document.getElementById('userscontianer'); // Correct the typo in the ID
+// // Get the userscontainer element
+// const usersContainer = document.getElementById('userscontianer'); // Correct the typo in the ID
 
-// Create a new row element with the 'box' class
-const newRow = document.createElement('div');
-newRow.classList.add('row', 'box');
+// // Create a new row element with the 'box' class
+// const newRow = document.createElement('div');
+// newRow.classList.add('row', 'box');
 
-// Create the first column
-const col1 = document.createElement('div');
-col1.classList.add('col-md-3');
-col1.innerHTML = `
-    <div class="card border-0 h-100">
-        <div class="card-body">
-            <a class="btn btn-transparent" href="edituser.html" style="background-color: transparent; border: 0px;">
-                <img src="logos/avatar.png" height="60" width="60" alt="">
-                <span style="text-decoration: underline;">تعديل</span>
-            </a>
-        </div>
-    </div>
-`;
-const selectElement = document.getElementById('users');
-var selectedValue = selectElement.value;
+// // Create the first column
+// const col1 = document.createElement('div');
+// col1.classList.add('col-md-3');
+// col1.innerHTML = `
+//     <div class="card border-0 h-100">
+//         <div class="card-body">
+//             <a class="btn btn-transparent" href="edituser.html" style="background-color: transparent; border: 0px;">
+//                 <img src="logos/avatar.png" height="60" width="60" alt="">
+//                 <span style="text-decoration: underline;">تعديل</span>
+//             </a>
+//         </div>
+//     </div>
+// `;
+// const selectElement = document.getElementById('users');
+// var selectedValue = selectElement.value;
 
 // function getusers(type){
 // // result = جيب داتا من api لtype 

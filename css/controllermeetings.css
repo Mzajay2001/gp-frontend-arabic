@@ -50,12 +50,23 @@
     color: rgb(92, 92, 92) !important;
 }
 .input3{
-    height: 20px !important;
+    height: 35px !important;
     border-radius: 7px;
     border: 0px;
     color: rgb(92, 92, 92) !important;
     padding: 2% !important;
+    width : calc(55% /2) !important;
+    display: inline-block;
 }
+.input3::before{
+    content: attr(data-placeholder);
+    position: absolute;   
+    background-color: white; 
+}
+.input3:hover::before{content:"";}
+.input3:valid::before {
+    display: none;
+  }
 /*date picker*/
 .DATAPICKER{
     float: right;

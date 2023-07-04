@@ -138,7 +138,15 @@ var hr = document.createElement("hr");
 attendContainer.appendChild(hr);
 }
 
-  
+// async function getupcomingmeeting(){
+//   try{
+//   let result = await fetch('http://127.0.0.1:8000/api/upcoming-Meetings');
+//   console.log(await result.json());
+//   return result;
+//   }catch(reason){console.log(reason)}
+// }  
+// let first = await getupcomingmeeting();
+// console.log(first);
   
   
   
